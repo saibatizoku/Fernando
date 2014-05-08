@@ -19,6 +19,7 @@ Fernando.module('Docs', function (Docs, Fernando, Backbone, Marionette, $, _) {
             "tipo": "habitacion",
             "nombre": "Habitación",
             "vivienda_id": "Justo",
+            "nodo_id": "",
             "categorias": ["Sala"]
         }
     });

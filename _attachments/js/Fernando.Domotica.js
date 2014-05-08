@@ -302,10 +302,13 @@ Fernando.module('Domotica', function (Domotica, Fernando, Backbone, Marionette, 
                                 casa.set('ubicacion', ubicacion);
                                 var hab1 = new Fernando.Docs.Habitacion();
                                 hab1.set('nombre', 'Habitación 1');
+                                hab1.set('nodo_id', '0013a20040ad6568');
                                 var hab2 = new Fernando.Docs.Habitacion();
                                 hab2.set('nombre', 'Habitación 2');
+                                hab2.set('nodo_id', '0013a20040b13749');
                                 var hab3 = new Fernando.Docs.Habitacion();
                                 hab3.set('nombre', 'Habitación 3');
+                                hab3.set('nodo_id', '0013a20040b136bc');
                                 hab3.set('categorias', ['Cocina', 'Comedor']);
                                 var habitaciones = new Fernando.Docs.Habitaciones();
                                 var casa_vista = new Fernando.Vistas.ViviendaLayout({model: casa, collection: habitaciones});
