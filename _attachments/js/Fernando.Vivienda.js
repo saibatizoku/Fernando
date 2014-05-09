@@ -42,7 +42,21 @@ Fernando.module('Vistas', function (Vistas, Fernando, Backbone, Marionette, $, _
     Vistas.HabitacionInfo = Marionette.ItemView.extend({
         template: "#template-habitacion-info",
         className: "panel panel-primary",
-        model: Fernando.Docs.Habitacion
+        ui: {
+            'temperatura': '.nodo-temperatura',
+            'humedad': '.nodo-humedad',
+            'iluminacion': '.nodo-iluminacion',
+            'iluminacion_control': '.nodo-iluminacion-control',
+            'clima': '.nodo-clima',
+            'clima_control': '.nodo-clima-control'
+        },
+        model: Fernando.Docs.Habitacion,
+        onRender: function () {
+        },
+        activarLuz: function () {
+        },
+        desactivarLuz: function () {
+        }
     });
 
     Vistas.HabitacionGas = Vistas.HabitacionInfo.extend({
